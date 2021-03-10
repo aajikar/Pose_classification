@@ -230,12 +230,12 @@ class pose_dataset():
         """
         self.train_test_idx = {}
         self.train_test_idx['train'] = []
-        self.train_test_idx['test'] = []
+        self.train_test_idx['val'] = []
         for i in range(len(self.list_of_files)):
             if 'train' in self.list_of_files[i]:
                 self.train_test_idx['train'].append(i)
             else:
-                self.train_test_idx['test'].append(i)
+                self.train_test_idx['val'].append(i)
 
     # Function to create directory
     def create_dir(self, dirname):
@@ -492,8 +492,8 @@ class ToTensor(object):
 
 if __name__ == '__main__':
     db = pose_dataset()
-    db.refactor_data(r"C:\Users\BTLab\Documents\Aakash\bodies-at-rest=py3\bodies-at-rest-p3\data_BR\synth",
-                      r"C:\Users\BTLab\Documents\Aakash\Pose Classification\Data")
+    db.refactor_data(r"C:\Users\BTLab\Documents\Aakash\bodeis-at-rest-data",
+                      r"C:\Users\BTLab\Documents\Aakash\Data_train_val_test")
 
 
 

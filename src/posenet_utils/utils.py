@@ -68,7 +68,7 @@ def create_single_metadata_file(root_dir):
 
 if __name__ == '__main__':
     root_dir = \
-        r"C:\Users\BTLab\Documents\Aakash\Pose Classification\Data\Train"
+        r"C:\Users\BTLab\Documents\Aakash\Data_train_val_test\val"
     my_dict, my_df = create_single_metadata_file(root_dir)
     fn = os.path.join(root_dir, 'metadata.csv')
     my_df.to_csv(fn, index=False)
