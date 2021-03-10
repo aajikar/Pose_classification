@@ -100,3 +100,7 @@ if __name__ == '__main__':
 #     print(f'Average accuracy for class {i} is: {pd.DataFrame.mean(val_scores[i]["Accuracy"])}')
 #     print(f'Std of accuracy for class {i} is: {pd.DataFrame.std(val_scores[i]["Accuracy"])}')
 #     print()
+=======
+if __name__ == "__main__":
+	train_posenet()
+>>>>>>> 7444dbbd90d17a16d3103033d7c5048648558e6e
